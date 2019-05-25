@@ -10,5 +10,10 @@
   <%= @document.user_id %>
 </p>
 
+<p>
+  <strong>Link:</strong>
+  <%= link_to :Download, url_for(@document.file) %>
+</p>
+
 <%= link_to 'Edit', edit_document_path(@document) %> |
 <%= link_to 'Back', documents_path %>
