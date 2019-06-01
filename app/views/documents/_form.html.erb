@@ -16,17 +16,12 @@
     <%= form.text_field :name %>
   </div>
 
-  <div class="field">
-    <%= form.label :user_id %>
-    <%= form.text_field :user_id %>
-  </div>
-
   <div class='field'>
     <%= form.label :file %>
     <%= form.file_field :file %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Save Document" %>
   </div>
 <% end %>
